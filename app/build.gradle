@@ -44,6 +44,12 @@ android {
             signingConfig signingConfigs.release
         }
     }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "FileExplorer_${variant.name}_${variant.versionName}.apk"
+        }
+    }
 }
 
 dependencies {

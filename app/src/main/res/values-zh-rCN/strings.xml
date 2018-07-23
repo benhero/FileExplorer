@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--通用-->
+    <string name="undo">撤销</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确认</string>
+    <string name="file">文件</string>
+    <string name="folder">文件夹</string>
+    <string name="empty_folder">空文件夹</string>
+    <string name="settings">设置</string>
+
+    <!--主界面-->
+    <string name="home_exit_tips">再按一次退出</string>
+
+    <!--侧边栏-->
+    <string name="sd_card">SD卡</string>
+    <string name="photo">图片</string>
+    <string name="video">视频</string>
+    <string name="music">音乐</string>
+    <string name="document">文档</string>
+    <string name="download">下载</string>
+
+    <!-- 文件操作 -->
+    <string name="copy">拷贝</string>
+    <string name="delete">删除</string>
+    <string name="paste">粘贴</string>
+    <string name="select_all">全选</string>
+    <string name="cut">剪切</string>
+    <string name="rename">重命名</string>
+    <string name="share">分享</string>
+    <string name="compress">压缩</string>
+    <string name="open_with">打开方式</string>
+    <string name="hide">隐藏</string>
+    <string name="add_shortcut">添加快捷方式</string>
+    <string name="property">属性</string>
+    <string name="delete_snack_tips">您确定要删除以下选中文件吗?</string>
+    <string name="paste_suc">粘贴成功</string>
+    <string name="paste_fail">粘贴失败</string>
+    <string name="replace">替换</string>
+    <string name="retain">保留</string>
+    <string name="paste_dup_tips">已经存在。\n是否要保留原始文件？</string>
+    <string name="toolbar_subtitle_file">个文件</string>
+    <string name="toolbar_subtitle_folder">个文件夹</string>
+    <string name="new_file">新建文件</string>
+    <string name="create_file_hint">请输入名称</string>
+    <string name="create_name_empty_tips">名称不能为空!</string>
+    <string name="add_shortcut_suc">成功添加快捷方式</string>
+</resources>

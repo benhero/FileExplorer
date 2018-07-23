@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">File-Lab</string>
+    <string name="author">Benhero</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--通用-->
+    <string name="undo">Undo</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="toolbar_subtitle_folder">\u0020folders</string>
+    <string name="toolbar_subtitle_divider">\u0020,\u0020</string>
+    <string name="toolbar_subtitle_file">\u0020files</string>
+    <string name="file">File</string>
+    <string name="folder">Folder</string>
+    <string name="empty_folder">Empty Folder</string>
+    <string name="settings">Settings</string>
+
+    <!--主界面-->
+    <string name="home_exit_tips">Press again to exit</string>
+
+    <!--侧边栏-->
+    <string name="sd_card">SD Card</string>
+    <string name="photo">Photo</string>
+    <string name="video">Video</string>
+    <string name="music">Music</string>
+    <string name="document">Document</string>
+    <string name="download">Download</string>
+
+    <!-- 文件操作 -->
+    <string name="copy">Copy</string>
+    <string name="delete">Delete</string>
+    <string name="paste">Paste</string>
+    <string name="select_all">Select All</string>
+    <string name="cut">Cut</string>
+    <string name="rename">Rename</string>
+    <string name="share">Share</string>
+    <string name="compress">Compress</string>
+    <string name="open_with">Open With</string>
+    <string name="hide">Hide</string>
+    <string name="add_shortcut">Add Shortcut</string>
+    <string name="property">property</string>
+    <string name="delete_snack_tips">Are you sure to delete these selected files?</string>
+    <string name="paste_suc">Paste Suc</string>
+    <string name="paste_fail">Paste Fail</string>
+    <string name="replace">Replace</string>
+    <string name="retain">Retain</string>
+    <string name="paste_dup_tips">\u0020is exist!\nDo you want to retain it?</string>
+    <string name="new_file">New File</string>
+    <string name="create_file_hint">Enter Name</string>
+    <string name="create_name_empty_tips">Name can not be empty!</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="add_shortcut_suc">Add shortcut successfully</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_a">AActivity</string>
+</resources>

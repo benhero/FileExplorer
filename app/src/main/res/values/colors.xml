@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimaryDark">#00796B</color>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorAccent">#009688</color>-->
+
+    <color name="colorPrimaryLight">#B2DFDB</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#727272</color>
+    <color name="dividerColor">#B6B6B6</color>
+
+    <color name="tool_bar_primary_text">#99212121</color>
+
+    <color name="selected_primary_color">#757575</color>
+    <color name="selected_primary_color_dark">#616161</color>
+    <color name="selected_item_color">#EEEEEE</color>
+    <color name="selected_item_ripple_color">#A5A5A5</color>
+
+    <color name="action_mode_primary_color">#212121</color>
+    
+    <!--<color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorPrimaryLight">#FFCDD2</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="dividerColor">#B6B6B6</color>-->
+</resources>

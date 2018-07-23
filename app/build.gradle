@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.benhero.fileexplorer"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("BenheroGithub.jks")
+            storePassword "BenheroGithub"
+            keyAlias "BenheroGithub"
+            keyPassword "BenheroGithub"
+        }
+        debug {
+            storeFile file("BenheroGithub.jks")
+            storePassword "BenheroGithub"
+            keyAlias "BenheroGithub"
+            keyPassword "BenheroGithub"
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // general
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.github.turing-tech:MaterialScrollBar:13.3.0'
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.github.ParkSangGwon:TedPermission:v1.0.8'
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+    implementation('com.jayfeng:lesscode-core:0.9.0') {
+        // exclusion for update the android support jar
+        // for example, you can use the appcompat-v7 in your project
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    // network
+    implementation 'com.squareup.retrofit2:retrofit:2.0.0'
+}

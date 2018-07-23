@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dialog_common_margin"
+    android:paddingRight="@dimen/dialog_common_margin"
+    android:paddingTop="@dimen/dialog_common_margin">
+
+    <EditText
+        android:id="@+id/create_file_dialog_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:hint="@string/create_file_hint"
+        android:imeOptions="actionDone"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/create_file_dialog_edit"
+        android:checkedButton="@+id/create_file_dialog_radio_file"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/create_file_dialog_radio_file"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/file"/>
+
+        <RadioButton
+            android:id="@+id/create_file_dialog_radio_folder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/folder"/>
+    </RadioGroup>
+
+</RelativeLayout>

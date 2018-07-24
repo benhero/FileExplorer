@@ -70,7 +70,7 @@ public class FileIntentUtil {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             Uri contentUri = FileProvider.getUriForFile(AndroidApplication.getContext(),
-                    AndroidApplication.getContext().getPackageName() + ".fileProvider", file);
+                    AndroidApplication.getContext().getPackageName() + ".file_provider", file);
             intent.setDataAndType(contentUri, type);
         } else {
             intent.setDataAndType(Uri.fromFile(file), type);

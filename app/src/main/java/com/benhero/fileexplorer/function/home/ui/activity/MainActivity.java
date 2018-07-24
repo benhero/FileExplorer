@@ -22,6 +22,7 @@ import com.benhero.fileexplorer.base.presentation.ui.fragment.FragmentHelper;
 import com.benhero.fileexplorer.function.fileexplorer.ui.fragment.FileExplorerFragment;
 import com.benhero.fileexplorer.function.fileexplorer.ui.fragment.FileExplorerFragmentManager;
 import com.benhero.fileexplorer.function.home.event.ActionModeEvent;
+import com.benhero.fileexplorer.function.update.FirUpdatePresenter;
 import com.gun0912.tedpermission.PermissionListener;
 import com.gun0912.tedpermission.TedPermission;
 
@@ -68,9 +69,18 @@ public class MainActivity extends BaseActivity
         } else {
             new TedPermission(this)
                     .setPermissionListener(mPermissionListener)
-                    .setDeniedMessage("If you reject permission,you can not use this service\n\nPlease turn on permissions at [Setting] > [Permission]")
+                    .setDeniedMessage("If you reject permission,you can not use this service\n\nPlease turn on permissions at " +
+                            "[Setting] > [Permission]")
                     .setPermissions(Manifest.permission.WRITE_EXTERNAL_STORAGE)
                     .check();
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (mFileExplorerFragment != null) {
+            FirUpdatePresenter.checkUpdate(this);
         }
     }
 
